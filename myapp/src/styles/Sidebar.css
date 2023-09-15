@@ -1,0 +1,170 @@
+
+
+
+a{
+    text-decoration: none; /*to remove the underline of the links */
+}
+
+ul{
+    list-style: none; /*to remove the bullets of the list */
+}
+
+
+main{
+    position: relative; 
+    margin: var(--header-height) 0 0 0;
+    padding: 0 1rem;
+    font-size: 1rem;
+    transition: 0.5s; /*specifies the transition effect change */
+}
+
+.header {
+    position: fixed;  /*after transiton the item still in his place */
+    top: 0;
+    left: 0;
+    height: var(--header-height);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-color);
+    padding: 0 1rem;
+    transition: .5s;
+}
+
+.header-toggle { /* for menue icon */
+    font-size: 1.25rem;
+    cursor: pointer;  /* set the cursor shape (hand) when hovering over the menue icon */
+    color: var(--first-color);
+}
+
+.sidebar {
+    position: fixed;
+    top : 0;
+    left: -30%; /*when change size for diffrent screen will hide the sideBar  */
+    height: 100%;
+    width: var(--nav-width);
+    background-color: var(--first-color);
+    padding-top: 1rem;
+    transition: 0.5s;
+  
+      
+}
+
+.nav {
+    display: flex;
+    flex-direction: column; /* the items of list arranged vertically */
+    justify-content: space-between; 
+    overflow: hidden; /* hidden the content over beyond navbar */
+    height: 100%;
+}
+
+ 
+.nav-link {
+    display: grid;
+    grid-template-columns: max-content max-content; /* width fits the content */
+    column-gap: 1.25rem; /* space between coulumn */
+    position: relative;
+    color: var(--first-color-alt); /*color of nav icon, name */
+    transition: .5s;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 1.25rem;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    
+  }
+  
+  .nav-logo-icon {
+    width: calc(var(--header-height) ); /* تعديل القيمة حسب الارتفاع المناسب */
+    height: auto;
+    cursor: pointer;
+    font-size:  1.25rem;
+    margin-right: 0.5rem;
+  }
+
+.nav-logo img {
+    height: 80px;
+    width: 80px;
+    box-shadow : rgba(0, 0, 0, 0.4);
+       
+}
+
+.nav-logo-name {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    font-weight: 700;
+   
+}
+.nav-logo span {
+    margin-right: 50px;
+}
+
+  
+.nav-link:hover{ /*change color when the mouse hovers */
+    color: var(--white-color);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.active { /* when the page active */
+    color: var(--white-color);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.active::before { /* the line before item in left when active will appear */
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 38px;
+    width: 3px;
+    background-color: var(--white-color);
+    transition: .5s;
+}
+
+.show { /* when open the meneu set position*/
+    left: 0;
+}
+
+.space-toggle { 
+    padding-left: calc(var(--nav-width) + 1rem);
+}
+
+
+@media screen and (min-width: 768px) {  /*on all screeans that min-width: 768px big screen, laptop*/
+    main{
+        margin: calc(var(--header-height) + 1rem) 0 0 0;
+        padding: 0 1rem 0 calc(var(--nav-width) + 2rem);  
+ 
+    } 
+
+    .header {
+        height: calc(var(--header-height) + 1rem);
+        padding-left: calc(var(--nav-width) + 2rem);
+        position: fixed;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: 0;
+        padding: 1rem 0 0 0;
+      /* عرض الـ sidebar بشكل دائم */
+    }
+    
+    
+    .show {
+        width: calc(var(--header-height) + 156px);
+    }
+
+    .space-toggle {
+        padding-left: calc(var(--nav-width) + 188px);
+    }
+
+}
+

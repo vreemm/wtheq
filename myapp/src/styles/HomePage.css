@@ -1,0 +1,141 @@
+
+.main-container {
+  margin: 7% 20% 7% 20%;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.Home-page-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.home-top-data {
+  font-size: 1.5rem;
+  color:  #564685;
+}
+
+
+.home-heading {
+  text-transform: uppercase;
+  font-size: 5.5rem;
+  color:  #8894ec;
+}
+
+.home-para {
+  margin-top: 1.5rem;
+  margin-bottom: 3.4rem;
+  max-width: 60rem;
+  font-size: 1.4rem;
+  color:  #564685;
+}
+
+.Home-page-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home-page-img img {
+  height: 180px;
+  width: 180;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9rem;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+.flex-container {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+   
+}
+
+
+.flex-child {
+  flex: 1;
+  padding: 20px;
+  border-radius: 15px;
+  width: 180px;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  justify-content: center;
+}  
+
+.flex-child:first-child {
+  margin-right: 30px;  
+} 
+
+.title {
+  color: #564685;
+  padding-bottom: 20px;
+}
+
+
+.card {
+  display: flex;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 1.4rem;
+}
+
+.card-img {
+  flex: 0 0 auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding-left: 55px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #8894ec; 
+}
+
+.card-text {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color:  #564685;
+}
+
+.btn {
+  font-size: 1rem;
+  width: 100px;
+  height: 40px;
+  background-color:  #8894ec;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  border: none;
+  color:  #D2D7FF;
+  cursor: pointer;
+  
+}
+
+.btn:hover{ /*change color when the mouse hovers */
+  color: #564685;
+  background-color:  #D2D7FF;
+  
+}
+

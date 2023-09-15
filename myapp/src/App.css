@@ -1,0 +1,44 @@
+/* all pages */
+
+:root{ /*to all the page to make it easiar to use */
+    
+  --header-height: 3rem; 
+  --nav-width: 68px;
+
+  --first-color: #564685;
+  --first-color-alt: #8894ec; 
+  --white-color: #D2D7FF;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Nunito Sans" , sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  background-color: #efefef;
+}
+
+.App {
+  width: 100%;
+  max-width: 800px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+  
